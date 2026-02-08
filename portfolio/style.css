@@ -1,0 +1,168 @@
+/* ===== GLOBAL SETTINGS ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    background:#e0e5ec; /* light neutral background */
+    color:#333;
+}
+
+/* ===== NAVBAR ===== */
+#nav{
+    background: linear-gradient(90deg, #667eea, #764ba2); /* blue-purple gradient */
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    border-radius:0 0 20px 20px;
+}
+
+#nav h2{
+    font-size:24px;
+    letter-spacing:1px;
+}
+
+#center-nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+    padding:8px 15px;
+    border-radius:15px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect - glossy */
+#center-nav a:hover{
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(5px);
+    transform: scale(1.1);
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* cool blue gradient */
+    color:white;
+    text-align:center;
+    border-radius: 30px;
+    margin:20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero p{
+    font-size:22px;
+    font-weight:500;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    border:5px solid rgba(255,255,255,0.4);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.content{
+    padding:60px 40px;
+    min-height:80vh;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius:30px;
+    margin:20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    color:rgb(48, 27, 27);
+}
+
+/* Section headings */
+.content h1{
+    margin-bottom:20px;
+    font-size:36px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+}
+
+/* ===== SKILLS LIST ===== */
+ul{
+    margin-left:25px;
+    font-size:20px;
+}
+
+ul li{
+    margin-bottom:12px;
+    padding:10px 15px;
+    border-radius:20px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+ul li:hover{
+    background: rgba(255,255,255,0.4);
+    transform: scale(1.05);
+}
+
+/* ===== BACK BUTTON LINK ===== */
+#nav a{
+    display:inline-block;
+    transition: all 0.3s ease;
+}
+
+#nav a:hover{
+    background: rgba(255,255,255,0.25);
+    transform: scale(1.1);
+    padding:8px 15px;
+}
+
+/* ===== MEDIA QUERIES (Responsive) ===== */
+@media screen and (max-width:768px){
+    #nav{
+        flex-direction:column;
+        align-items:flex-start;
+        border-radius:0;
+    }
+
+    #center-nav{
+        margin-top:10px;
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+
+    #center-nav a{
+        margin:5px 0;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .profile{
+        width:140px;
+        height:140px;
+    }
+}
